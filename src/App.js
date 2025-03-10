@@ -3,6 +3,7 @@ import Header from "./Components/Header.js";
 import Hero from "./Components/Hero.js";
 import EventForm from "./Components/EventForm.js";
 import { Routes, Route } from "react-router";
+import About from "./Components/About.js";
 
 function App() {
   const events = [
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/events" element={<Events />} />
         <Route path="/add-event" element={<EventForm />} />
+        <Route path="/about" element={<About/>} />
       </Routes>
 
     </div>
