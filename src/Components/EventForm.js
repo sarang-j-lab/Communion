@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { SiOutline } from 'react-icons/si';
-import { useSearchParams } from 'react-router';
+import { useNavigate, useSearchParams } from 'react-router';
 
 const EventForm = () => {
+
+    const navigate = useNavigate();
 
     const [event,setEvent] = useState({
         title: "",
@@ -24,6 +26,7 @@ const EventForm = () => {
             date: "",
             category: ""
         });
+        navigate("/")
     }
     return (
         <div className='flex flex-col items-center justify-center mt-5'>
