@@ -9,7 +9,6 @@ function App() {
   const events = [
     { title: "Christmas Charity Drive", date: Date.now(), category: "Religious" },
     { title: "Welcome party", date: Date.now(), category: "Social" },
-    { title: "Easter Sunday Service", date: Date.now(), category: "Charity" },
   ] 
 
   if (!localStorage.getItem("events")){
